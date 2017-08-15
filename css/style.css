@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Give+You+Glory|Happy+Monkey|VT323|Voltaire');
+canvas {
+  width: 400px;
+  border: 2px solid #c3c3c3;
+  margin: auto;
+  display: block;
+}
+
+input{
+  font-size: 14px;
+}
+
+h1, h2, h3, #finput{
+  font-family: 'Voltaire', sans-serif;
+  color: #778899;
+  text-align: center;
+}
+
+#loadImage{
+  font-family: 'Voltaire', sans-serif;
+  color: #778899;
+  font-size: 18px;
+  text-align:center;
+}
+
+.filters{
+  color: #708090;
+  font-family: 'Happy Monkey', cursive;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #F8F8FF;
+  display:inline-block;
+  text-decoration:none;
+  padding: 10px 24px;
+}
+
+#greyfil{
+  position:relative;
+  left: 360px;
+}
+
+#rgbfil{
+  position:relative;
+  left:400px;
+}
+
+#rainbowfil{
+  position:relative;
+  left: 440px;
+}
+
+#blurfil{
+  position: relative;
+  left: 480px;
+}
+
+#resetbutton{
+  position: relative;
+  left: 630px;
+  color: #FF0000;
+  font-size:24px;
+  border-radius:8px;
+  text-decoration:none;
+  padding: 10px 24px;
+  display:inline-block;
+  font-family: 'VT323', monospace;
+}

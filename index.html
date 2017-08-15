@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Image Filter App</title>
+
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <script
+    src= "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+
+  </script>
+
+<div>
+
+<h1> Image Filter App</h1>
+
+  <h2> <u> Upload photos and apply filters: </u> </h2>
+  <canvas id = "c1"></canvas>
+
+  <p id = "loadImage"> Load Image:
+    <input type = "file" multiple = "false" accept = "image/*" id="finput" onchange = "upload()">
+  </p>
+  <h3> <u>Choose Filter:</u> </h3>
+  <p>
+ <input type = "button" value = "Greyscale" class="filters"  id="greyfil" onclick = "makeGrey()" >
+
+     <input type = "button" value = "Red,Green,Blue" class="filters" id="rgbfil"  onclick = "rgb()" >
+
+    <input type = "button" value = "Rainbow"  class="filters" id="rainbowfil"  onclick = "rainbow()" >
+
+    <input type = "button" value = "Blur"  class="filters" id="blurfil"  onclick = "blurPic()">
+  </p>
+  <p>
+  <input type = "button" value = "Reset Image" id="resetbutton"  onclick = "reset()" >
+
+</p>
+</div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

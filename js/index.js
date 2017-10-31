@@ -74,7 +74,7 @@ function rgb(){
     rgbFilter();
     rgbimage.drawTo(canvas);
   }
-  }
+}
 
 
 function rainbowFilter(){
@@ -90,7 +90,8 @@ function rainbowFilter(){
           rainbowimage.setRed(x , y, 2*avg);
           rainbowimage.setGreen(x, y, 0);
           rainbowimage.setBlue(x, y, 0);
-        } else {
+        } 
+        else {
           rainbowimage.setRed(x, y, 255);
           rainbowimage.setGreen(x, y, 2*avg - 255);
           rainbowimage.setBlue(x, y, 2*avg - 255);
@@ -113,7 +114,8 @@ function rainbowFilter(){
           rainbowimage.setRed(x, y, 2*avg);
           rainbowimage.setGreen(x, y, 2*avg);
           rainbowimage.setBlue(x, y, 0);
-        } else{
+        } 
+        else{
           rainbowimage.setRed(x, y, 255);
           rainbowimage.setGreen(x, y, 255);
           rainbowimage.setBlue(x, y, 2*avg-255);
@@ -136,43 +138,46 @@ function rainbowFilter(){
           rainbowimage.setRed(x, y, 0);
           rainbowimage.setGreen(x, y, 0);
           rainbowimage.setBlue(x, y, 2*avg);
-        } else {
+        } 
+        else {
           rainbowimage.setRed(x, y, 2*avg - 255);
           rainbowimage.setGreen( x, y, 2*avg - 255);
           rainbowimage.setBlue(x, y, 255);
         }
       }
-          else if (y > 5 * h / 7 && y <= 6 * h / 7) {
-      if (avg < 128) {
+      else if (y > 5 * h / 7 && y <= 6 * h / 7) {
+        if (avg < 128) {
         rainbowimage.setRed(x, y, 0.8 * avg);
         rainbowimage.setGreen(x, y, 0);
         rainbowimage.setBlue(x, y, 2 * avg);
-      } else {
+        } 
+        else {
         rainbowimage.setRed(x, y, 1.2 * avg - 51);
         rainbowimage.setGreen(x, y, 2 * avg - 255);
         rainbowimage.setBlue(x, y, 255);
+        }
       }
-      }
-       else if (y > h * 6 / 7 && y <= h) {
-      if (avg < 128) {
+      else if (y > h * 6 / 7 && y <= h) {
+        if (avg < 128) {
         rainbowimage.setRed(x, y, 1.6 * avg);
         rainbowimage.setGreen(x, y, 0);
         rainbowimage.setBlue(x, y, 1.6 * avg);
-      } else {
+        } 
+        else {
         rainbowimage.setRed(x, y, 0.4 * avg + 153);
         rainbowimage.setGreen(x, y, 2 * avg - 255);
         rainbowimage.setBlue(x, y, 0.4 * avg + 153);
+        }
       }
-     }
-   }
-  }
-  
-  function rainbow(){
-    if(imageLoaded(image)){
-      rainbowFilter();
-      rainbowimage.drawTo(canvas);
     }
   }
+  
+function rainbow(){
+  if(imageLoaded(image)){
+      rainbowFilter();
+      rainbowimage.drawTo(canvas);
+  }
+ }
   
 
 function blurFilter() {
@@ -202,9 +207,9 @@ function blurFilter() {
        if(newY > image.getHeight()-1) {
          newY = image.getHeight()-1;
        }
-        if (newY <0) {
+       if (newY <0) {
           newY = 0;
-        }
+       }
       
       var newPixel = image.getPixel(newX,newY);
       blurimage.setPixel(x,y,newPixel);

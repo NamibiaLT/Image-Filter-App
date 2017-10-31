@@ -11,9 +11,9 @@ var rainbowimage = null;
 function upload(){
   canvas = document.getElementById("c1");
   var fileinput = document.getElementById("finput");
- image = new SimpleImage(fileinput);
+  image = new SimpleImage(fileinput);
   
-image.drawTo(canvas);
+  image.drawTo(canvas);
   alert("Image has been uploaded");
 }
 
